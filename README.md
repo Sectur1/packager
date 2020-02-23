@@ -82,8 +82,8 @@ This project is licensed under the MIT License
 | volume                     | Sets the audio volume. It defaults to 256                                      |
 | audiFilters                | FFMPEG's audio filter                                                          |
 
-| General options | Use |
-| ----------------------------------------------------------------------------------------------------------- |
+| General options            | Use                                                                            |
+| -------------------------- | ------------------------------------------------------------------------------ |
 | metadata                   | File metadata                                                                  |
 | fileSize                   | Force file size                                                                |
 | frames                     | Number of frames to output eg 1 for a picture                                  |
