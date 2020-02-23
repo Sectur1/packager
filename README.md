@@ -58,7 +58,7 @@ size:'720x360',duration:'10',aspectRatio:'4:3',framerate:'10',output:'/path/to/v
 This project is licensed under the MIT License 
 
 ## Options
-| Video stream options | Use |
+| Video stream options     | Use                                                                              |
 | ----------------------------------------------------------------------------------------------------------- |
 | input                    | The input (This can be on the input parameter to signify 1 stream or per stream) |
 | size                     | The video's size for eg "720x360"                                                |
@@ -68,10 +68,10 @@ This project is licensed under the MIT License
 | bitsPerRawSample         | The video's Bit Per Sample                                                       |
 | startTime                | Offset time to the start the video                                               |
 | noVideo                  | To disenable the video                                                           |
-| videoFilters            | FFMPEG's video filter                                                            |
+| videoFilters             | FFMPEG's video filter                                                            |
 | videoBitRate             | The video's bitrate                                                              |
 
-| Audio options |
+| Audio options              |                                                                                |
 | ----------------------------------------------------------------------------------------------------------- |
 | aframes                    | Number of audio frames to output                                               |
 | quality                    | Codec specific audio quality                                                   |
@@ -80,7 +80,7 @@ This project is licensed under the MIT License
 | noAudio                    | Disenables audio                                                               |
 | audioCodec                 | Audio codec to use                                                             |
 | volume                     | Sets the audio volume. It defaults to 256                                      |
-| audiFilters               | FFMPEG's audio filter                                                           |
+| audiFilters                | FFMPEG's audio filter                                                          |
 
 | General options |
 | ----------------------------------------------------------------------------------------------------------- |
