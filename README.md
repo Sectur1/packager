@@ -59,7 +59,7 @@ This project is licensed under the MIT License
 
 ## Options
 | Video stream options     | Use                                                                              |
-| ----------------------------------------------------------------------------------------------------------- |
+| -----------------------  | -------------------------------------------------------------------------------- |
 | input                    | The input (This can be on the input parameter to signify 1 stream or per stream) |
 | size                     | The video's size for eg "720x360"                                                |
 | duration                 | The duration of the video eg "50" or "1:50"                                      |
@@ -71,8 +71,8 @@ This project is licensed under the MIT License
 | videoFilters             | FFMPEG's video filter                                                            |
 | videoBitRate             | The video's bitrate                                                              |
 
-| Audio options              |                                                                                |
-| ----------------------------------------------------------------------------------------------------------- |
+| Audio options              | Use                                                                            |
+| ------------------------   | ------------------------------------------------------------------------------ |
 | aframes                    | Number of audio frames to output                                               |
 | quality                    | Codec specific audio quality                                                   |
 | sample                     | Audio sample rate in Hz                                                        |
