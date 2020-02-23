@@ -17,16 +17,24 @@ const packager = require("packager")
 
 const videopackager = new packager()
 //To create DASH contents
-videopackager().dash(input,output,..args)
+videopackager().dash([{input:"/path/to/inputfile.mkv",duration:"59",output:'/path/to/outputfile.mp4'}],'/path/to/outputDASHManifest.mpd')
+
+// To skip creating the steams and jump generate the manifest
+// Note input files must be mp4
+videopackager().dash([{input:"/path/to/inputfile.mp4",output:'/path/to/outputfile.mp4'}],'/path/to/outputDASHManifest.mpd',false)
 
 //To create HLS contents
-videopackager().hls(input,output,..args)
+videopackager().hls([{input:"/path/to/inputfile.mkv",duration:"59",output:'/path/to/outputfile.mp4'}],'/path/to/outputHLSManifest.m3u8')
+
+// To skip creating the steams and jump generate the manifest
+// Note input files must be mp4
+videopackager().dash([{input:"/path/to/inputfile.mp4",output:'/path/to/outputfile.mp4'}],'/path/to/outputHLSManifest.m3u8',false)
 
 //Multiply video streams can be created to and edited with FFMPEG 
-p.ffmpeg(null,null,{input:'/path/to/video.mp4',duration:'10',
-format:'144x360',duration:'10',aspectRatio:'4:3',framerate:'10',output:'/path/to/outvideo.mp4'},
+p.ffmpeg([{input:'/path/to/video.mp4',duration:'10',
+size:'144x360',duration:'10',aspectRatio:'4:3',framerate:'10',output:'/path/to/outvideo.mp4'},
 {input:'/path/to/video.mp4',duration:'10',startTime:'10',
-format:'720x360',duration:'10',aspectRatio:'4:3',framerate:'10',output:'/path/to/video.mp4'}
+size:'720x360',duration:'10',aspectRatio:'4:3',framerate:'10',output:'/path/to/video.mp4'}]
 )
 
 
@@ -53,7 +61,7 @@ This project is licensed under the MIT License
 | Video stream options | Use |
 | ----------------------------------------------------------------------------------------------------------- |
 | input                    | The input (This can be on the input parameter to signify 1 stream or per stream) |
-| format                   | The video's size for eg "720x360"                                                |
+| size                     | The video's size for eg "720x360"                                                |
 | duration                 | The duration of the video eg "50" or "1:50"                                      |
 | aspectRatio              | The video's aspect eg"16:9"                                                      |
 | frameRate                | The video's framerate eg "24" or "60"                                            |
